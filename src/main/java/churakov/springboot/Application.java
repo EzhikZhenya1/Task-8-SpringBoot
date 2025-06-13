@@ -11,3 +11,16 @@ public class Application {
 	}
 
 }
+
+
+/*
+Для создания таблицы.
+
+CREATE TABLE users (
+                       id SERIAL PRIMARY KEY,
+                       name VARCHAR(50) NOT NULL CHECK (char_length(name) >= 2),
+                       lastname VARCHAR(50) NOT NULL CHECK (char_length(lastname) >= 2),
+                       age INT NOT NULL CHECK (age > 0)
+);
+
+ */
