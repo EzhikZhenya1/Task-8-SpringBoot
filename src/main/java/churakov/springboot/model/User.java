@@ -29,8 +29,8 @@ public class User {
 
     @NotEmpty(message = "Lastname not empty")
     @Size(min = 2, max = 50)
-    @Column(name = "lastName")
-    private String lastName;
+    @Column(name = "lastname")
+    private String lastname;
 
     @NotNull
     @Min(value = 1, message = "Age should be more than 0")
@@ -39,9 +39,9 @@ public class User {
 
     public User() {}
 
-    public User(String name, String lastName, int age) {
+    public User(String name, String lastname, int age) {
         this.name = name;
-        this.lastName = lastName;
+        this.lastname = lastname;
         this.age = age;
     }
 }

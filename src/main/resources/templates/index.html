@@ -15,7 +15,7 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
-                <th>Surname</th>
+                <th>Lastname</th>
                 <th>Age</th>
                 <th colspan="2">Operations</th>
             </tr>
@@ -26,7 +26,7 @@
 
                 <td th:text="${user.id}"></td>
                 <td th:text="${user.name}"></td>
-                <td th:text="${user.lastName}"></td>
+                <td th:text="${user.lastname}"></td>
                 <td th:text="${user.age}"></td>
                 <td><a th:href="@{/updateUser(id=${user.id})}">
                     <input type="button" value="Update"/></a></td>
